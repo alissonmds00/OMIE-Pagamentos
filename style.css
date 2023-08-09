@@ -1,0 +1,14 @@
+/* global */
+@import './css/global/global.css';
+
+/* Utilitários */
+@import './css/utilitarios/classes.css';
+@import './css/utilitarios/elementos.css';
+@import './css/utilitarios/cores.css';
+@import './css/utilitarios/espacamentos.css';
+
+/* header */
+@import './css/header/style.css';
+
+/* contas */
+@import './css/contas/style.css';

@@ -1,0 +1,12 @@
+.contas-container {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.contas .titulo {
+    display: flex;
+    flex-direction: row;
+}
+
+.pendentes .grid, .bloquear .grid, .efetuados .grid  {
+    grid-template-columns: 1fr 1fr;
+}
