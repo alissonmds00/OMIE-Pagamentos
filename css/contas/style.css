@@ -1,12 +1,37 @@
 .contas-container {
     grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
 }
 
 .contas .titulo {
     display: flex;
     flex-direction: row;
+    align-items: center;
+}
+
+.contas-container .col-2 img {
+    justify-content: right;
 }
 
 .pendentes .grid, .bloquear .grid, .efetuados .grid  {
     grid-template-columns: 1fr 1fr;
+    align-items: start;
+}
+
+.pendentes .grid h4, .bloquear .grid h4, .efetuados .grid h4 {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.pendentes .grid .col-1 p, .bloquear .grid .col-1 p, .efetuados .grid .col-1 p{
+    color: #6D6F75;
+
+}
+
+.pendentes .grid p span, .bloquear .grid p span, .efetuados .grid p span {
+    font-size: 3.2rem;
+}
+
+.contas-container .col-2 {
+    justify-self: right;
 }

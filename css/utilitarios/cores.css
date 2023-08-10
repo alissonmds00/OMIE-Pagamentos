@@ -1,7 +1,9 @@
 :root {
   --cor-1: #2c2d31;
-  --cor-2: #009AA6;
-  --cor-3: #A8F8FE;
+  --cor-2: #6d6f75;
+  --cor-3: #ABABAB;
+  --cor-4: #009aa6;
+  --cor-5: #a8f8fe;
 }
 
 .cor-1 {
@@ -14,4 +16,18 @@
 
 .cor-3 {
   color: var(--cor-3);
+}
+
+.cor-4 {
+  color: var(--cor-4);
+}
+
+.cor-5 {
+  color: var(--cor-5);
+}
+
+/* opacidade */
+.cor-2-op {
+  color: var(--cor-2);
+  opacity: 60%;
 }

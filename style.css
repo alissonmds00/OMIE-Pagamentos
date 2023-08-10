@@ -6,9 +6,13 @@
 @import './css/utilitarios/elementos.css';
 @import './css/utilitarios/cores.css';
 @import './css/utilitarios/espacamentos.css';
+@import './css/utilitarios/fonts.css';
 
 /* header */
 @import './css/header/style.css';
 
 /* contas */
 @import './css/contas/style.css';
+
+/* footer */
+@import './css/footer/footer.css';
