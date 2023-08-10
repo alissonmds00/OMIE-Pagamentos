@@ -32,7 +32,7 @@
                 </div>
             </div>
             <div class="pagamento-status">
-                <ul class="flex">
+                <ul class="grid">
                     <li>
                         <h3 class="semibold">Pendentes de pagamento</h3>
                         <p>03<span>Totalizando R$ 59,70</span></p>
@@ -68,15 +68,15 @@
             </ul>
             <div class="saldo  esp-2">
                 <h3 class="font-1-21 bold center">Saldo total disponível</h3>
-                <p class="center bold">R$<span class="font-1-56">2.345,98</span></p>
+                <p class="center bold font-1-21 esp-0">R$ <span class="font-1-56">2.345,98</span></p>
                 <div class=" saldo-contas">
                     <h3 class="font-1-12 semibold">Contas registradas para este saldo</h3>
                     <ul class="contas-usuario">
                         <li><img src="./assets/img/contas registradas/icon1.svg" alt="">Nu Pagamentos S.A. <img src="./assets/img/contas registradas/reticencias.svg" alt="">
-                            <p class="font-1-12 semibold cor-2-op">**** **** **** 5502</p>
+                            <p class="font-1-12 semibold cor-3-op">**** **** **** 5502</p>
                         </li>
-                        <li><img src="./assets/img/contas registradas/icon2.svg" alt="">Banco Bradesco BBI S.A. <img src="./assets/img/contas registradas/reticencias.svg" alt="">
-                            <p class="font-1-12 semibold cor-2-op">**** **** **** 8804</p>
+                        <li><img src="./assets/img/contas registradas/icon2.svg" alt="">Banco Bradesco BBI S.A.<img src="./assets/img/contas registradas/reticencias.svg" alt="">
+                            <p class="font-1-12 semibold cor-3-op">**** **** **** 8804</p>
                         </li>
                     </ul>
                 </div>
@@ -88,14 +88,15 @@
             <h1 class="font-1-56 bold">Contas</h1>
             <ul class="flex">
                 <li><a href=""><img src="./assets/img/contas/conta.svg" alt=""></a></li>
-                <li><a href=""><img src="./assets/img/contas/nubank.svg" alt=""></a></li>
-                <li><a href=""><img src="./assets/img/contas/bradesco.svg" alt=""></a></li>
 
+                <li><a href=""><img class="conta-banco" src="./assets/img/contas/nubank.svg" alt=""><img class="notificacao" src="./assets/img/contas/notificacao-nubank.svg" alt=""></a></li>
+
+                <li><a href=""><img class="conta-banco" src="./assets/img/contas/bradesco.svg" alt=""><img class="notificacao" src="./assets/img/contas/notificacao-bradesco.svg" alt=""></a></li>
             </ul>
         </div>
         <div class="contas-container grid">
             <div class="pendentes">
-                <h3 class="semibold">Pendentes <span>(03)</span></h3>
+                <h3 class="semibold">Pendentes <span class="cor-3-op">(03)</span></h3>
                 <div class="container-pendentes">
                     <div class="grid">
                         <div class="col-1">
@@ -104,7 +105,9 @@
                             <p class="vencimento">Vencimento: 16/06</p>
                         </div>
                         <div class="col-2">
-                            <img src="./assets/img/contas/nubank.svg" width="22" height="22" alt="">
+                            <div>
+                                <img src="./assets/img/contas/nubank.svg" width="22" height="22" alt="">
+                            </div>
                             <p>R$ <span>19,90</span></p>
                         </div>
                     </div>
@@ -115,7 +118,9 @@
                             <p class="vencimento">Vencimento: 16/06</p>
                         </div>
                         <div class="col-2">
+                            <div>
                             <img src="./assets/img/contas/bradesco.svg" width="22" height="22" alt="">
+                            </div>
                             <p>R$ <span>19,90</span></p>
                         </div>
                     </div>
@@ -126,23 +131,27 @@
                             <p class="vencimento">Vencimento: 16/06</p>
                         </div>
                         <div class="col-2">
-                            <img src="./assets/img/contas/nubank.svg" width="22" height="22" alt="">
+                            <div>
+                                <img src="./assets/img/contas/nubank.svg" width="22" height="22" alt="">
+                            </div>
                             <p>R$ <span>19,90</span></p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="bloquear">
-                <h3 class="semibold">Bloquear pagamento <span>(02)</span></h3>
+                <h3 class="semibold">Bloquear pagamento <span class="cor-3-op">(02)</span></h3>
                 <div class="bloquear-container">
-                    <div class="grid">
+                    <div class="grid esp-1">
                         <div class="col-1">
                             <h4>Material de escritório</h4>
                             <p>EcoBags LTDA.</p>
                             <p class="vencimento">Vencimento: 16/06</p>
                         </div>
                         <div class="col-2">
-                            <img src="./assets/img/contas/bradesco.svg" width="22" height="22" alt="">
+                            <div>
+                                <img src="./assets/img/contas/bradesco.svg" width="22" height="22" alt="">
+                            </div>
                             <p>R$ <span>19,90</span></p>
                         </div>
                     </div>
@@ -153,14 +162,16 @@
                             <p class="vencimento">Vencimento: 16/06</p>
                         </div>
                         <div class="col-2">
-                            <img src="./assets/img/contas/nubank.svg" width="22" height="22" alt="">
+                            <div>
+                                <img src="./assets/img/contas/nubank.svg" width="22" height="22" alt="">
+                            </div>
                             <p>R$ <span>19,90</span></p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="bloquear">
-                <h3 class="semibold">Efetuados <span>(02)</span></h3>
+                <h3 class="semibold">Efetuados <span class="cor-3-op">(02)</span></h3>
                 <div class="efetuados-container">
                     <div class="grid">
                         <div class="col-1">
@@ -169,7 +180,9 @@
                             <p class="vencimento">Vencimento: 16/06</p>
                         </div>
                         <div class="col-2">
-                            <img src="./assets/img/contas/nubank.svg" width="22" height="22" alt="">
+                            <div>
+                                <img src="./assets/img/contas/nubank.svg" width="22" height="22" alt="">
+                            </div>
                             <p>R$ <span>19,90</span></p>
                         </div>
                     </div>
@@ -180,13 +193,17 @@
                             <p class="vencimento">Vencimento: 16/06</p>
                         </div>
                         <div class="col-2">
-                            <img src="./assets/img/contas/nubank.svg" width="22" height="22" alt="">
+                            <div>
+                                <img src="./assets/img/contas/nubank.svg" width="22" height="22" alt="">
+                            </div>
                             <p>R$ <span>19,90</span></p>
                         </div>
                     </div>
                 </div>
     </article>
-    <footer><p class="font-1-12">Alguns direitos reservados. <br>Design desenvolvido por <a class="semibold" href="">Letícia Almeida</a></p></footer>
+    <footer>
+        <p class="font-1-12">Alguns direitos reservados. <br>Design desenvolvido por <a class="semibold" href="">Letícia Almeida</a></p>
+    </footer>
 </body>
 
 </html>

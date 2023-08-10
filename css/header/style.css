@@ -1,7 +1,7 @@
 #main header {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  gap: 20px;
+  gap: 60px;
 }
 
 .navbar-itens {
@@ -9,6 +9,39 @@
   align-items: center;
   grid-template-columns: repeat(6, 1fr);
   margin-bottom: 20px;
+  position: relative;
+}
+
+.navbar-itens::after {
+  content: "";
+  width: 100%;
+  background: var(--cor-5);
+  top: 70px;
+  height: 1px;
+  position: absolute;
+}
+
+.navbar-itens a:hover, .navbar-itens  a:focus { 
+  color: var(--cor-4);
+}
+
+.navbar-itens li {
+  position: relative;
+  width: 100%;
+}
+
+.navbar-itens a::after {
+  position: absolute;
+  content: "";
+  display: block;
+  height: 3px;
+  background: var(--cor-4);
+  bottom: -5px;
+  transition: .3s;
+}
+
+.navbar-itens a:hover::after, .navbar-itens a:focus::after {
+  width: 100%;
 }
 
 /* linha divisória */
@@ -17,12 +50,8 @@
   text-align: center;
 }
 
-.navbar-itens li a {
-}
-
-
 .usuarios {
-  padding: 20px 8px;
+  padding: 30px 8px;
   gap: 20px;
 }
 
@@ -45,13 +74,52 @@
   gap: 8px;
 }
 
-
 .contas-usuario li p {
   grid-column: 2;
 }
 
+.contas-usuario button {
+  border: none;
+  appearance: inher;
+}
+
 .saudacao {
   grid-template-columns: 1fr auto;
+}
+
+.saudacao img {
+  height: 100%;
+}
+
+.saudacao .conteudo h2 {
+  margin-bottom: 0px;
+}
+
+.saudacao .conteudo p {
+  margin-top: 0px;
+}
+
+.pagamento-status p {
+  font-size: 4.8rem;
+  font-weight: 700;
+  position: relative;
+}
+
+.pagamento-status p span {
+  font-size: 1rem;
+  background-color: var(--cor-5);
+  font-weight: initial;
+  position: absolute;
+  bottom: 45%;
+  left: 5.2rem;
+  border-radius: 1px;
+  padding: 3px;
+}
+
+.pagamento-status ul {
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-self: left;
+  gap: 20px;
 }
 
 @media (max-width: 1100px) {
