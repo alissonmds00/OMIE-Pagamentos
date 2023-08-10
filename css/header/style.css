@@ -15,8 +15,8 @@
 .navbar-itens::after {
   content: "";
   width: 100%;
-  background: var(--cor-5);
-  top: 70px;
+  background: var(--cor-4);
+  top: 43px;
   height: 1px;
   position: absolute;
 }
@@ -34,7 +34,7 @@
   position: absolute;
   content: "";
   display: block;
-  height: 3px;
+  height: 4px;
   background: var(--cor-4);
   bottom: -5px;
   transition: .3s;
@@ -76,11 +76,6 @@
 
 .contas-usuario li p {
   grid-column: 2;
-}
-
-.contas-usuario button {
-  border: none;
-  appearance: inher;
 }
 
 .saudacao {
